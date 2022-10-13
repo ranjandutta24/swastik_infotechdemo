@@ -1,0 +1,30 @@
+.parent_main {
+  //   margin: 20px;
+  border: 1px solid gray;
+  //   height: 90vh;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  margin: 5px;
+  font-size: 20px;
+}
+h3 {
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+}
+.child {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}

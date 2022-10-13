@@ -1,0 +1,21 @@
+<div class="parent_main">
+    <h1>This is parent componet</h1>
+    <div class="flex">
+        <div class="left">
+            <h2>Top Customers from Child 1</h2>
+            <h3 *ngFor="let element of cs ; let i = index">{{element.customer_name}} </h3>
+        </div>
+        <div class="right">
+            <div class="clock">
+                <div>{{date | date: 'EEEE, MMMM d, y'}}</div>
+                <div id="time">{{date | date: 'h:mm:ss a'}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="child">
+        <app-child1-component></app-child1-component>
+        <app-child2-component [parentdata]="parentdata"></app-child2-component>
+    </div>
+
+
+</div>

@@ -1,0 +1,31 @@
+<div class="ch1">
+
+    <h4>Child 1</h4>
+
+    <app-shared-component></app-shared-component>
+
+    <table>
+
+        <tr id="th">
+            <th>Name</th>
+            <th>Id</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+
+        <tr *ngFor="let element of customers ; let i = index">
+            <td>{{element.customer_name}}</td>
+            <td>{{element.customer_id}}</td>
+            <td>{{element.customer_age}}</td>
+            <td>{{element.customer_address}}</td>
+        </tr>
+
+    </table>
+    <form [formGroup]="customerForm">
+        <input type="text" formControlName="customer_name" placeholder="Name">
+        <input type="text" formControlName="customer_age" placeholder="Age">
+        <input type="text" formControlName="customer_address" placeholder="Address">
+    </form>
+
+    <button (click)="addCustomer()">Add Customer</button>
+</div>
